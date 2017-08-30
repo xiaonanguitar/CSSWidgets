@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 import DropMenu from './DropMenu';
+import ThreeDRotate from './ThreeDRotate';
 
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
         return (
             <div className="mainContent">
                <DropMenu/>
+               <ThreeDRotate/>
             </div>
         )
     }
