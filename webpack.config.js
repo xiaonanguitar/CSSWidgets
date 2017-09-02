@@ -29,7 +29,9 @@ module.exports = {
         path: path.resolve(__dirname, prod ? "./dist" : "./build"),
         filename: prod ? "js/[name].min.js" : "js/[name].js",
         //chunkFilename: 'js/[name].chunk.js',
-        publicPath: prod ? "http:cdn.mydomain.com" : ""
+        publicPath: prod ? "http:cdn.mydomain.com" : "",
+        libraryTarget: 'var',
+        library: 'EntryPoint'
     },
     resolve: {
         //配置项,设置忽略js后缀
@@ -71,12 +73,7 @@ module.exports = {
         new webpack.NoErrorsPlugin(),
         new OpenBrowserPlugin({
             url: 'http://localhost:8080'
-        }),
-        /* 公共库 */
-        new CommonsChunkPlugin({
-            name: 'vendors',
-            minChunks: Infinity
-        }),
+        })
     ]
 };
 // 判断开发环境还是生产环境,添加uglify等插件
