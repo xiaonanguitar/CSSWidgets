@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 import DropMenu from './DropMenu';
 import ThreeDRotate from './ThreeDRotate';
+import Collapse, {Panel} from './Collapse';
 
 
 class App extends Component {
@@ -13,8 +14,21 @@ class App extends Component {
     render() {
         return (
             <div className="mainContent">
-               <DropMenu/>
-               <ThreeDRotate/>
+               <Collapse>
+                    <Panel header="title1">
+                        <div>xxxx</div>
+                    </Panel>
+                    <Panel header="title1">
+                        <div>xxxx</div>
+                        <div>xxxx</div>
+                        <div>xxxx</div>
+                        <div>xxxx</div>
+                    </Panel>
+                    <Panel header="title1">
+                        <div>xxxx</div>
+                        <div>xxxx</div>
+                    </Panel>
+               </Collapse>
             </div>
         )
     }
