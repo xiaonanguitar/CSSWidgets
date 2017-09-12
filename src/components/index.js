@@ -18,13 +18,13 @@ class App extends Component {
                     <Panel header="title1">
                         <div>xxxx</div>
                     </Panel>
-                    <Panel header="title1">
+                    <Panel header="title2">
                         <div>xxxx</div>
                         <div>xxxx</div>
                         <div>xxxx</div>
                         <div>xxxx</div>
                     </Panel>
-                    <Panel header="title1">
+                    <Panel header="title3">
                         <div>xxxx</div>
                         <div>xxxx</div>
                     </Panel>
