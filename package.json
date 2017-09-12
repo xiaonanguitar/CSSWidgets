@@ -1,8 +1,8 @@
 {
   "name": "tp-collapse",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "\"使用webpack搭建自己的前端组件库\"",
-  "main": "index.js",
+  "main": "./build/js/main.js",
   "scripts": {
     "test": "test",
     "dev": "webpack-dev-server  --hot --content-base src",
