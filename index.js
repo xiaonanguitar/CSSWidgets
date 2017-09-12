@@ -32,6 +32,6 @@ ReactDOM.render(<App/>,
   document.getElementById('content')
 );
 */
-
-module.exports = require('./src/components');
+import components from './src/components';
+module.exports = components;
 

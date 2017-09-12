@@ -66,7 +66,7 @@ var EntryPoint =
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "0fc4fa1d43fb3123a6d5"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "65d295e7a833e18306cd"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -599,12 +599,18 @@ var EntryPoint =
 
 	'use strict';
 	
-	//Created by z00250978 on 2017/03/24.
+	var _components = __webpack_require__(/*! ./src/components */ 2);
+	
+	var _components2 = _interopRequireDefault(_components);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	module.exports = _components2.default; //Created by z00250978 on 2017/03/24.
 	
 	/*
 	const {Collapse} = components;
 	const Panel = Collapse.Panel;
-	
+
 	class App extends Component {
 	    
 	        constructor(props,context) {
@@ -627,14 +633,12 @@ var EntryPoint =
 	            )
 	        }
 	    }
-	
-	
+
+
 	ReactDOM.render(<App/>,
 	  document.getElementById('content')
 	);
 	*/
-	
-	module.exports = __webpack_require__(/*! ./src/components */ 2);
 
 /***/ }),
 /* 2 */
