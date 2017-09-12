@@ -6,7 +6,7 @@ import classnames from 'classnames';
 import PanelContent from './PanelContent';
 import './index.less';
 
-export class Panel extends Component {
+class Panel extends Component {
     
     constructor(props,context) {
         super(props)
@@ -76,5 +76,7 @@ class Collapse extends Component {
         )
     }
 }
+
+Collapse.Panel = Panel
 
 export default Collapse

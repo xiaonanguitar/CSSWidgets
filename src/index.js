@@ -2,7 +2,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components';
+import components from './components';
 
 
 ReactDOM.render(<App/>,
@@ -10,10 +10,5 @@ ReactDOM.render(<App/>,
 );
 
 
-module.exports = {
-  run: function () {
-    console.log('run from library');
-  },
-  component: App
-};
+module.exports = components;
 
