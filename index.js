@@ -1,8 +1,5 @@
 //Created by z00250978 on 2017/03/24.
 
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import components from './src/components';
 /*
 const {Collapse} = components;
 const Panel = Collapse.Panel;
@@ -36,5 +33,5 @@ ReactDOM.render(<App/>,
 );
 */
 
-module.exports = components;
+module.exports = require('./src/components');
 
