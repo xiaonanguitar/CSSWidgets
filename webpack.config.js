@@ -23,7 +23,7 @@ var getEntry = function() {
 var prod = process.env.NODE_ENV === 'production' ? true : false;
 module.exports = {
     entry: [
-        path.resolve(__dirname, './')
+        path.resolve(__dirname, './src/components')
     ],
     output: {
         path: path.resolve(__dirname, prod ? "./dist" : "./build"),
