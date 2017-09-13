@@ -1,6 +1,8 @@
 //Created by z00250978 on 2017/03/24.
-
+import components from './src/components';
 /*
+import React,{Component} from 'react';
+import ReactDOM from 'react-dom';
 const {Collapse} = components;
 const Panel = Collapse.Panel;
 
@@ -32,6 +34,6 @@ ReactDOM.render(<App/>,
   document.getElementById('content')
 );
 */
-import components from './src/components';
-module.exports = components;
+
+export default  components;
 

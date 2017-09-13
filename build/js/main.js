@@ -66,7 +66,7 @@ var EntryPoint =
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "65d295e7a833e18306cd"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "acb3875004988f71b169"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -599,18 +599,22 @@ var EntryPoint =
 
 	'use strict';
 	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
 	var _components = __webpack_require__(/*! ./src/components */ 2);
 	
 	var _components2 = _interopRequireDefault(_components);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	module.exports = _components2.default; //Created by z00250978 on 2017/03/24.
-	
 	/*
+	import React,{Component} from 'react';
+	import ReactDOM from 'react-dom';
 	const {Collapse} = components;
 	const Panel = Collapse.Panel;
-
+	
 	class App extends Component {
 	    
 	        constructor(props,context) {
@@ -633,12 +637,14 @@ var EntryPoint =
 	            )
 	        }
 	    }
-
-
+	
+	
 	ReactDOM.render(<App/>,
 	  document.getElementById('content')
 	);
 	*/
+	
+	exports.default = _components2.default; //Created by z00250978 on 2017/03/24.
 
 /***/ }),
 /* 2 */
