@@ -27,10 +27,10 @@ module.exports = {
     ],
     output: {
         path: path.resolve(__dirname, prod ? "./dist" : "./build"),
-        filename: prod ? "js/[name].min.js" : "js/[name].js",
+        filename: prod ? "js/[name].min.js" : "[name].js",
         //chunkFilename: 'js/[name].chunk.js',
         publicPath: prod ? "http:cdn.mydomain.com" : "",
-        libraryTarget: 'var',
+        libraryTarget: 'umd',
         library: 'EntryPoint'
     },
     resolve: {
@@ -42,7 +42,7 @@ module.exports = {
     },
     module: {
         loaders: [{
-            test: /\.(png|jpg|jpeg|gif)$/,
+            test: /\.(png|jpg|jpeg|gif|woff|woff2|eot|ttf|svg)$/,
             loader: 'url?limit=10000&name=images/[name].[ext]'
         }, {
             test: /\.less$/,
