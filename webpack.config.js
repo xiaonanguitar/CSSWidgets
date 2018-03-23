@@ -22,9 +22,10 @@ var getEntry = function() {
 };
 var prod = process.env.NODE_ENV === 'production' ? true : false;
 module.exports = {
-    entry: [
-        path.resolve(__dirname, './src/components')
-    ],
+    entry: {
+        main: path.resolve(__dirname, './src/components'),
+        test: path.resolve(__dirname, 'example','src','index.jsx')
+    },
     output: {
         path: path.resolve(__dirname, prod ? "./dist" : "./build"),
         filename: prod ? "js/[name].min.js" : "[name].js",
@@ -32,6 +33,9 @@ module.exports = {
         publicPath: prod ? "http:cdn.mydomain.com" : "",
         libraryTarget: 'umd',
         library: 'EntryPoint'
+    },
+    devServer: {
+        contentBase: path.join(__dirname, 'example')
     },
     resolve: {
         //配置项,设置忽略js后缀
@@ -62,7 +66,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: './src/index.html'
+            template: './example/index.html'
         }),
         new CleanPlugin(['dist', 'build']),
         // 启动热替换

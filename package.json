@@ -1,6 +1,6 @@
 {
   "name": "tp-collapse",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "\"使用webpack搭建自己的前端组件库\"",
   "main": "build/main.js",
   "files": [
@@ -51,5 +51,9 @@
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "history": "^3.0.0",
+    "react-router": "^3.2.1",
+    "react-router-dom": "^4.2.2"
+  }
 }
