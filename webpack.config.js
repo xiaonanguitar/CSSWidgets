@@ -54,7 +54,10 @@ module.exports = {
         }, {
             test: /\.js[x]?$/,
             exclude: /node_modules/,
-            loader: 'babel?presets[]=es2015&presets[]=react'
+            loader: 'babel',
+            query: {
+                presets: ['es2015', 'stage-2', 'react']
+            }
         }, {
             test: /\.html$/,
             loader: 'html?attrs=img:src img:srcset'

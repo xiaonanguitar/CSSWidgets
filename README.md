@@ -4,3 +4,5 @@
 ### 2、根据当前的环境执行不同的构建命令，比如：
 * 开发环境: npm run dev (启动webpack-dev-server)
 * 开发构建:npm run build (启动本地构建)
+
+* 编译支持ES6参考http://www.ruanyifeng.com/blog/2016/01/babel.html
